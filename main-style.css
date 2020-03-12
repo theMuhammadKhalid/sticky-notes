@@ -1,0 +1,82 @@
+*{
+    /* Include content, padding and border in elements total width and height */
+    box-sizing: border-box; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    background: teal;
+}
+
+header{
+    text-align: center;
+    background: teal;
+}
+
+h1{
+    font: 300% 'Righteous', cursive;
+    background: teal;
+    margin-bottom: 1%;
+}
+
+h2{
+    margin-top: 0%;
+    font: bold 150% 'Bubbler One', sans-serif;
+    background: teal;
+}
+
+form{
+    text-align: center;
+    background: teal;
+}
+
+#notetxt{
+    width: 62%;
+    padding: 10px;
+    font-size: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    
+}
+
+#addButton{
+    width: 120px;
+    padding: 10px 5px;
+    font: bold 100% 'Arial', sans-serif;
+    border: 2px solid black;
+    border-radius: 10px;
+    background: rgb(80, 150, 86);
+}
+
+#notetxt:focus , #notetxt:hover, #addButton:hover{
+    box-shadow: 0px 0px 10px 2px rgb(75, 69, 69);
+}  
+
+@media screen and (max-width: 350px){
+    h1{
+        font-size: 250%;
+    }
+
+    h2{
+        font-size: 125%;
+    }
+
+    #notetxt{
+        width: 90%;
+    }
+
+    #addButton{
+        margin-top: 5%;
+    }
+}
+
+
+#stickers{
+    background: seagreen;
+}
+
+.sticky{
+    background: rgb(207, 206, 211);
+}

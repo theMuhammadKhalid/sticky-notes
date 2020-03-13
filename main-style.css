@@ -3,33 +3,32 @@
     box-sizing: border-box; 
 }
 
+body{
+    background-color: teal;
+}
+
 .container{
     display: flex;
     flex-direction: column;
     font-size: medium;
-    background: teal;
 }
 
 header{
     text-align: center;
-    background: teal;
 }
 
 h1{
     font: 300% 'Righteous', cursive;
-    background: teal;
     margin-bottom: 1%;
 }
 
 h2{
     margin-top: 0%;
     font: bold 150% 'Bubbler One', sans-serif;
-    background: teal;
 }
 
 form{
     text-align: center;
-    background: teal;
 }
 
 #notetxt{
@@ -38,7 +37,6 @@ form{
     font-size: 100%;
     border: 2px solid black;
     border-radius: 20px;
-    
 }
 
 #addButton{
@@ -72,11 +70,26 @@ form{
     }
 }
 
-
 #stickers{
-    background: seagreen;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2% 0% 0% 0%;
+    padding: 0%;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#stickers li{
+    width: 220px;
+    height: 320px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 10px; /* top-bottom left-right */
+    font: 200% 'Nanum Pen Script', cursive;
+    background: #fff740;
+    box-shadow: 5px 5px 2px rgb(75, 69, 69);
 }
 
 .sticky{
-    background: rgb(207, 206, 211);
+    word-wrap: break-word;
 }

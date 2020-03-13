@@ -17,6 +17,7 @@ function addStickyToDOM(key, value) {
     var stickers = document.getElementById("stickers");
     var sticky = document.createElement("li");
     sticky.setAttribute("id", key);
+    sticky.setAttribute("title", "Click to delete");
     var span = document.createElement("span");
     span.setAttribute("class", "sticky");
     span.innerHTML = value;
